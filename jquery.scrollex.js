@@ -14,7 +14,8 @@
 
 	var $window = $(window),
 		ids = 1,
-		queue = {};
+		queue = {},
+		jQuery = $;
 
 	/**
 	 * Resolves a top/bottom value, optionally relative to an element's height
