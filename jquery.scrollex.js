@@ -1,6 +1,16 @@
 /* jquery.scrollex v0.2.1 | (c) n33 | n33.co @n33co | MIT */
 
-(function($) {
+!function(root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(this, function($) {
 
 	var $window = $(window),
 		ids = 1,
@@ -321,4 +331,4 @@
 
 	};
 
-})(jQuery);
+});
